@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القلعة السيبرانية</title>
+    <style>
+        
+  
+         
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;  
+            text-align: center;
+
+        }
+        .header, .footer {
+        
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            color:black;
+            
+        }
+  
+        .navigation {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+            
+        }
+        .navigation a {
+            color: white;
+            margin:15px;
+            text-decoration: none;
+            
+        }
+        .content {
+            display: none;        
+            padding: 20px;
+            text-align: right;
+             
+        }
+        .active {
+            display: block;
+           ::selection{
+            color: tomato;
+            background-color: black;
+           }
+        }
+        h2{
+            text-shadow: 1px 1px 20px blue;
+        }
+        h2{
+            
+            text-align: center;
+        }
+
+        #p4{
+            text-align:right;
+        }
+        
+           
+        
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+        img {
+            width: 400px;  
+            height: 100px;
+            border-radius: 30px;
+        }
+        .d11{
+            width: 400px;
+            height: 200px;
+            background-image: url(imge/17.jpg);
+            animation: Cyber 60s 2s ;
+            text-align:left;
+            
+        }
+        @keyframes Cyber{
+           20%{background-image: url(imge/17.jpg);}
+         
+           
+        }
+
+         
+           
+        
+    
+          
+
+        .login {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .c1{
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .c2 {
+            margin-bottom: 15px;
+        }
+        .c2 label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .c2 input {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        .c2 button {
+            width: 30%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .c2 button:hover {
+            background-color: #45a049; 
+        }
+        .c3{
+            font-size: 200%;
+                color: rgb(41, 124, 156);
+                text-shadow: -8px -8px 10px dimgray;
+        }
+        .c4{
+            
+            font-size: 200%;
+                color: rgb(41, 124, 156);
+                text-shadow: -8px -8px 10px dimgray;
+        
+             
+        }
+        .c5{
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+        .twitter {
+            background-color: #1da1f2;
+        }
+        .instagram {
+            background-color: #c32aa3;
+        }
+        
+             
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="c3">القلعة السيبرانية</h1>
+        
+    </div>
+    
+    <div class="navigation">
+        <a href="#" onclick="showSection('log in')">تسجيل الدخول</a>
+        <a href="#" onclick="showSection('home')">الرئيسية</a>
+        <a href="#" onclick="showSection('about')">عنّا</a>
+        <a href="#" onclick="showSection('services')">خدماتنا</a>
+        <a href="#" onclick="showSection('contact')">تواصل معنا</a>
+    </div>
+    <div id="log in" class=" content c1">
+        <h2>تسجيل الدخول</h2>
+        <form action="#" method="post">
+            <div id="log in" class="  c2">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div id="log in" class="c2">
+                <label for="password">كلمة السر:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="log in" class="c2">
+                <button type="submit">تسجيل الدخول</button>
+            </div>
+        
+    </div>
+   
+   
+
+
+    <div id="home" class="content active">
+        <h2 >نرحب بكم في القلعة السيبرانية </h2>
+        
+        <h3> الصفحة الرئيسية</h3>
+        <h4>نهتم بالتدريب والتاهيل في مجال الامن السيبراني </h4>
+        <h4> مركز القلعة هي موسسة تعلمية متخصصة تهدف الى تزويد الافراد والمهنيين بالمعرفة والمهارات اللازمة لحماية المعلومات والانظمة من التهديدات الالكترونية</h4>   
+        <div class="d11"></div>
+    </div>
+
+    <div id="about" class="content">
+        <h2>معلومات عنا</h2>
+        <h3>مركز القلعة السيبرانية</h3>
+        <h4>مؤسسة متخصصة في حماية المعلومات والأنظمة من التهديدات السيبرانية </h4>
+        <h4>يهدف المركز الى تعزيز الامان السيبراني من خلال تقديم خدمات استشارية ,تنفيذ تقنيات الحماية ,توفير التدريب والتوعية</h4>
+    </div>
+
+    <div id="services" class="content">
+        <h2>خدماتنا</h2>
+       <h3> تقيم المخاطر</h3>
+        <h4>تحليل وتحديد المخاطر المحتملة التي تواجة انظمة المعلومات وتقديم توصيات للتخفف منها</h4>
+        <h3>اختبار الاختراق</h3>
+        <h4> محاكات هجمات حقيقة لتحديد الثغرات الامنية في الشبكات والانظمة قبل ان يستغلها المهاجمون</h4>
+        <h3>استجابة الحوادث</h3>
+        <h4>تطوير خطط واستراتجيات للتعامل مع الهجمات السيبرانية والاستجابة لها بشكل فعال بما في ذلك التحقيقات وتحليل الاضرار</h4>
+
+    </div>
+
+    <div id="contact" class="content">
+        <h2>تواصل معنا</h2>
+        
+        
+       <h2 id="p4">البش مهندس \عمر المختار</p>
+        <a href="#">+967 779554661</a>
+    </div>
+
+    <div class="footer">
+        <marquee direction="right"> <h3 class="c4">&copy;  2024البش مهندس \عمر المختار</h3></marquee> 
+        
+       
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
